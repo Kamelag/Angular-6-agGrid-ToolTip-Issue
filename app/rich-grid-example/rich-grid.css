@@ -1,0 +1,46 @@
+.toolbar button {
+    margin: 2px; padding: 0;
+}
+
+[data-tooltip] {
+    display: inline-block;
+    position: relative;
+    padding: 0px 2px 15px 2px;
+}
+  
+  [data-tooltip]:before {
+    content: attr(data-tooltip);
+    display: none;
+    position: fixed;
+    margin: -25px 10px 10px 0px;  
+    background: #000000;
+    color: #ffffff;
+    min-height: 10px;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1.4;
+    max-width: 230px;
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    
+  }
+  [data-tooltip]::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip when hovering */
+  [data-tooltip]:hover:before,
+  [data-tooltip]:hover:after {
+    display: block;
+    z-index: 50;
+  }

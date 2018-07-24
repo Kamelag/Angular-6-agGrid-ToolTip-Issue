@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>ag-Grid Angular Rich Grid Example</title>
+
+    <script src="https://unpkg.com/zone.js@0.6.23?main=browser"></script>
+    <script src="https://unpkg.com/reflect-metadata@0.1.3"></script>
+    <script src="https://unpkg.com/systemjs@0.19.27/dist/system.src.js"></script>
+
+    <!-- ag-grid CSS -->
+    <link href="https://unpkg.com/ag-grid/dist/styles/ag-grid.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/ag-grid/dist/styles/theme-fresh.css" rel="stylesheet"/>
+
+    <!-- Example uses font awesome icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
+</head>
+
+<!-- 3. Display the application -->
+<body>
+<my-app>Loading...</my-app>
+</body>
+
+</html>
